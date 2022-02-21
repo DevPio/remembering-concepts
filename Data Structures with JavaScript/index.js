@@ -117,9 +117,32 @@ class LinkedList {
     }
   }
 
-  addStart() {}
+  addStart(element) {
+    if (element != null) {
+      const node = new Node(element);
 
-  addEnd() {}
+      node.next = this.head;
+
+      this.head = node;
+    }
+  }
+
+  addEnd(element) {
+    if (element != null) {
+      const node = new Node(element);
+      let curr = this.head;
+
+      if (curr === null) {
+        this.head = node;
+        return;
+      }
+
+      while (curr != null && curr.next) {
+        curr = curr.next;
+      }
+      curr.next = node;
+    }
+  }
 }
 
 const link = new LinkedList();
@@ -128,5 +151,7 @@ link.push(2);
 link.push(3);
 link.push(4);
 link.push(5);
+link.addEnd(2);
 
+link.addStart(33);
 console.log(link.head);
