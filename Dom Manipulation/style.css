@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.scrollable {
+  height: 100px;
+  width: 600px;
+  background-color: aquamarine;
+  border: 4px solid black;
+  overflow-y: scroll;
+}
+.scrollable p {
+  height: 30%;
+}

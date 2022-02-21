@@ -1,0 +1,1 @@
+const secondLi = document.getElementById;
