@@ -3,13 +3,17 @@
   padding: 0;
 }
 
-.scrollable {
+#scrollable {
   height: 100px;
   width: 600px;
-  background-color: aquamarine;
-  border: 4px solid black;
+  background-color: rgb(127, 240, 255);
+  border: 5px solid black;
   overflow-y: scroll;
 }
-.scrollable p {
+#scrollable p {
   height: 30%;
+}
+
+.big {
+  font-size: 30px;
 }
